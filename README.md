@@ -1,6 +1,6 @@
 # C#
  
-Repositório destinado a atividades/exercícios, projetos e experiências referêntes a **_linguagem C#**
+Repositório destinado a atividades/exercícios, projetos e experiências referêntes a **linguagem C#**
 
 # Autor 
 
