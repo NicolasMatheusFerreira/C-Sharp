@@ -1,6 +1,5 @@
 # C#
  
-<<<<<<< HEAD
 Repositório destinado a atividades/exercícios, projetos e experiências referêntes a **linguagem C#**.
 
 # Autor 
