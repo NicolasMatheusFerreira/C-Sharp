@@ -4,8 +4,6 @@ Repositório destinado a atividades/exercícios, projetos e experiências refer�
 
 # Autor 
 - Nicolas Matheus Ferreira
-- [Acesse meu linkedin](https://www.linkedin.com/in/nicolas-matheus-ferreira-8465581a8/)
-- [Acesse meu instagram](https://www.instagram.com/nicolas.matheus.ferreira/)
 
 # Sociais
 
