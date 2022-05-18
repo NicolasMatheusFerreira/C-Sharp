@@ -23,7 +23,7 @@ namespace Teste
 
             ConversaoTempo(ref entrada, ref dia, ref mes, ref ano);
      		   
-            Console.WriteLine("{0}:{1}:{2}", ano, mes, dia);
+            Console.WriteLine("{0} ano (s) {1} mes (ses) {2} dia (s)", ano, mes, dia);
         }
     }
 }
