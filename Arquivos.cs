@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-class Arquivos1 {
+class Arquivos {
 	
 	static void GravarArquivo(string caminho, string nomeArquivo, string nome, string endereco) {
 			
