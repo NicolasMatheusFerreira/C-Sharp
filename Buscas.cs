@@ -1,8 +1,6 @@
 using System;
 
 class Buscas {
-	
-		// Busca sequêncial iterativa
 
 	static int BuscaSeqRecursiva(string[] nomes, string nome, int x) {
 	

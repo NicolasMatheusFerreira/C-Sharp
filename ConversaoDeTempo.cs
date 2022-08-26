@@ -21,8 +21,7 @@ namespace Teste
             int ano = 0, mes = 0, dia = 0;
 	    int entrada = int.Parse(Console.ReadLine());
 
-            ConversaoTempo(ref entrada, ref dia, ref mes, ref ano);
-     		   
+            ConversaoTempo(ref entrada, ref dia, ref mes, ref ano);     		  
             Console.WriteLine("{0} ano (s) {1} mes (ses) {2} dia (s)", ano, mes, dia);
         }
     }
