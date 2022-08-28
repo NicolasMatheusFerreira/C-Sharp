@@ -2,7 +2,7 @@ using System;
 
 class SistemasNumericos {
 	
-	static string DecBin(double x, int y) {
+	static string DecBinRec(double x, int y) {
 		string bin = "1";
 		if (x>=Math.Pow(2,y)) {
 			x = x - Math.Pow(2,y);
@@ -10,11 +10,15 @@ class SistemasNumericos {
 
 		if (y==0)
 			return bin;
-		else return bin+DecBin(x, --y);
+		else return bin+DecBinRec(x, --y);
+	}
+
+	static int BinDecRec(string bin, int i) {
+
 	}
 	
 	static void Main(string[] args) {
 	
-		Console.WriteLine(DecBin(int.Parse(Console.ReadLine()),9));
+		Console.WriteLine(BinDecRec(Console.ReadLine(),0));
 	}
 }
