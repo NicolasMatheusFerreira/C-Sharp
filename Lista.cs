@@ -2,6 +2,16 @@ using System;
 
 class Lista {
 	
+	static void Inserir(string[] lista, ref int n, int i, string x) {
+		
+		if (n<lista.Length) {
+			for(int y = n; y>i; y--)
+				lista[y] = lista[y-1];			
+			lista[i] = x;
+			n++;
+		} else Console.WriteLine("Lista esta cheia");
+	}
+
 	static void Remover(string[] lista, ref int n, int i) {
 		
 		if (n>0) {
@@ -47,17 +57,7 @@ class Lista {
 			n++;
 		} else Console.WriteLine("Lista cheia!");
 	}
-
-	static void Inserir(string[] lista, ref int n, int i, string x) {
-		
-		if (n<lista.Length) {
-			for(int y = n; y>i; y--)
-				lista[y] = lista[y-1];			
-			lista[i] = x;
-			n++;
-		} else Console.WriteLine("Lista esta cheia");
-	}
-
+	
 	static void Main(string[] args) {
 				
 		string[] Lista = new string[10];

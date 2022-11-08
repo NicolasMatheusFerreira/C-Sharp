@@ -1,0 +1,16 @@
+C:\Users\nicol\desktop\Temporizacao\bin\Debug\net5.0\Temporizacao.exe
+C:\Users\nicol\desktop\Temporizacao\bin\Debug\net5.0\Temporizacao.deps.json
+C:\Users\nicol\desktop\Temporizacao\bin\Debug\net5.0\Temporizacao.runtimeconfig.json
+C:\Users\nicol\desktop\Temporizacao\bin\Debug\net5.0\Temporizacao.runtimeconfig.dev.json
+C:\Users\nicol\desktop\Temporizacao\bin\Debug\net5.0\Temporizacao.dll
+C:\Users\nicol\desktop\Temporizacao\bin\Debug\net5.0\Temporizacao.pdb
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.csproj.AssemblyReference.cache
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.AssemblyInfoInputs.cache
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.AssemblyInfo.cs
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.csproj.CoreCompileInputs.cache
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.dll
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\refint\Temporizacao.dll
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.pdb
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\Temporizacao.genruntimeconfig.cache
+C:\Users\nicol\desktop\Temporizacao\obj\Debug\net5.0\ref\Temporizacao.dll

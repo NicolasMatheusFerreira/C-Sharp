@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GRF7/+AOmcxxDxFv+NLLlJO37A+sAJvaVd9DdTTpkGzaurOy5Mng+OqaSYBj+i5QJ4tkgCn7XmT5n/1zxMOBCw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nicol\\Desktop\\Temporizacao\\Temporizacao.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
