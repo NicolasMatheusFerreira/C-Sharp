@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SshTB7MUs/XeJEXjFzyfsNaeYeKs9zL1r5D30+qSsgGjyTBgKm4heFI5cPQwyEVyEUL8qeSUMWpdODj6t3psTg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nicol\\Documents\\GitHub\\C#\\Trabalhador\\Trabalhador.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
