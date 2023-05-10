@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Zr6rFUumzT8LZ5E1nBNXX1ACGZmXQx0zKMl/1aoVfSwSA8kkEiB112s5wodqjf9Typ3wEqx+bjo+MKsU1Hevg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nicol\\Desktop\\SeparcaoSilabas\\SeparcaoSilabas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
