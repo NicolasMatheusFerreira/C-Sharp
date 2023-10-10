@@ -1,60 +1,52 @@
 using System;
-using System.Text;
 using System.Net;
 using System.Net.Sockets;
-using System.IO;
+using System.Text;
 
 namespace Sockets {
-	class Servidor {
+	public class Servidor {
 
-		public static IPEndPoint IPEndServidor;
-		public static Socket socketServidor;
-		public static string enderecoIP = "192.168.1.11"; 
-		public static string mensagemServidor = "Servidor encerrado!";
-		public static string caminhoRecepcaoArquivos = "C:\\";
+		public static IPAddress ipAddress;
+		public static IPEndPoint ipEndPoint;
 
 		public Servidor() {
-		
+			ipAddress = IPAddress.Parse("192.168.1.10");
+			ipEndPoint = new IPEndPoint(ipAddress, 6000);
 		}
-		
-		public void iniciarServidor() {
-			try {
-				IPEndServidor = new IPEndPoint(IPAddress.Parse(enderecoIP), 5656);
-				socketServidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-				socketServidor.Bind(IPEndServidor);
-	
-			} catch(Exception ex) {
-				mensagemServidor = "Servidor encerrado "+ex;
-				Console.WriteLine(mensagemServidor);
-				return;
-			}
+
+		public void executarServidor() {
+			
+			Socket escutando = new Socket(ipAddress.AddressFamily, SocketType.Dgram, ProtocolType.Udp);
 
 			try {
-				socketServidor.Listen(100);
-				Socket clienteSock = socketServidor.Accept();
-				clienteSock.ReceiveBufferSize = 16384;
+				escutando.Bind(ipEndPoint);
+				escutando.Listen(10);
 
-				byte[] dadosCliente = new byte[1024*50000];
+				while(true) {
+					Console.WriteLine("Aguardando conexao");
 
-				int tamanhoBytesRecebidos = clienteSock.Receive(dadosCliente, dadosCliente.Length, 0);
-				int tamanhoNomeArquivo = BitConverter.ToInt32(dadosCliente, 0);
-				string nomeArquivo = Encoding.UTF8.GetString(dadosCliente, 4, tamanhoNomeArquivo);
+					Socket clienteSocket = escutando.Accept();
 
-				BinaryWriter bWrite = new BinaryWriter(File.Open(caminhoRecepcaoArquivos+nomeArquivo, FileMode.Append));
-				bWrite.Write(dadosCliente, 4+tamanhoNomeArquivo, tamanhoBytesRecebidos-4-tamanhoNomeArquivo);
+					byte[] bytes = new byte[1024];
+					string data = null;
 
-				while (tamanhoBytesRecebidos>0) {
-					tamanhoBytesRecebidos = clienteSock.Receive(dadosCliente, dadosCliente.Length, 0);
-					if (tamanhoBytesRecebidos==0)
-						bWrite.Close();
-					else bWrite.Write(dadosCliente, 0, tamanhoBytesRecebidos);
+					while(true) {
+						int numByte = clienteSocket.Receive(bytes);
+						data+=Encoding.ASCII.GetString(bytes, 0, numByte);
+
+						if (data.IndexOf("<EOF>")>-1)
+							break;
+					}
+					Console.WriteLine("Texto recebido {0}", data);
+					byte[] mensagem = Encoding.ASCII.GetBytes("Texto recebido!");
+
+					clienteSocket.Send(mensagem);
+
+					clienteSocket.Shutdown(SocketShutdown.Both);
+					clienteSocket.Close();
 				}
-				bWrite.Close();
-				clienteSock.Close();
-
-				mensagemServidor = "Arquivo recebido  e arquivado ["+caminhoRecepcaoArquivos+nomeArquivo+"]";
 			} catch(Exception ex) {
-				Console.WriteLine("Erro ao receber arquivo");
+				Console.WriteLine(ex);
 			}
 		}
 	}
