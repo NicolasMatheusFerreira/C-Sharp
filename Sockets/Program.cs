@@ -4,8 +4,10 @@ namespace Sockets {
 	class Program {
 		static void Main(string[] args) {
 			
-			Client cliente = new Client();
-			cliente.ExecuteClient();
+			Servidor serv = new Servidor();
+			serv.executaServidor();
+		//	Cliente cliente = new Cliente();
+		//	cliente.enviar();
 
 		}
 	}
