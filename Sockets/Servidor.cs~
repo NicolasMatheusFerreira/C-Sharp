@@ -11,7 +11,7 @@ namespace Sockets {
 
 		public Servidor() {
 			
-			ipAddress = IPAddress.Parse("192.168.15.9");
+			ipAddress = IPAddress.Parse("192.168.15.8");
 			ipEndPoint = new IPEndPoint(ipAddress, 8000);
 		}
 

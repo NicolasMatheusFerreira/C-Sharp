@@ -15,7 +15,7 @@ namespace Sockets {
 			ipEndPoint = new IPEndPoint(ipAddress, 8000);
 		}
 
-		public bool conectar() {
+		public static bool conectar() {
 
 			Socket socket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
