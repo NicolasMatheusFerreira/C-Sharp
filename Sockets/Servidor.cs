@@ -22,20 +22,21 @@ namespace Sockets {
 			socket.Bind(ipEndPoint);
 
 			socket.Listen(10);
+			
+			while(true) {
+				Console.WriteLine("Aguardando conexao");
+				Socket handler = socket.Accept();			
 
-			Console.WriteLine("Aguardando conexao");
-			socket.Accept();
+				string data = null;
+				byte[] bytes = new byte[1024];
+	
+				int bytesRec = handler.Receive(bytes);
+				data = data+Encoding.ASCII.GetString(bytes);
 
-			string data = null;
-			byte[] bytes = new byte[1024];
-			int bytesRec = socket.Receive(bytes);
-			data+= Encoding.ASCII.GetString(bytes);
-
-			Console.WriteLine("Texto recebido "+data);
-
-			Socket hand = socket;
-			byte[] msg = Encoding.ASCII.GetBytes("Servidor respondido!");
-			socket.Send(msg);
+				Console.WriteLine("Texto recebido "+data);
+				bytes = Encoding.ASCII.GetBytes("Servidor respondido!");
+				handler.Send(bytes);
+			}
 			socket.Close();
 		}
 	}

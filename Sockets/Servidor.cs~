@@ -11,7 +11,7 @@ namespace Sockets {
 
 		public Servidor() {
 			
-			ipAddress = IPAddress.Parse("192.168.15.8");
+			ipAddress = IPAddress.Parse("192.168.15.9");
 			ipEndPoint = new IPEndPoint(ipAddress, 8000);
 		}
 
@@ -24,18 +24,19 @@ namespace Sockets {
 			socket.Listen(10);
 
 			Console.WriteLine("Aguardando conexao");
-			socket.Accept();
+			Socket handler = socket.Accept();
 
 			string data = null;
 			byte[] bytes = new byte[1024];
-			int bytesRec = socket.Receive(bytes);
+	
+
+			int bytesRec = handler.Receive(bytes);
 			data+= Encoding.ASCII.GetString(bytes);
 
 			Console.WriteLine("Texto recebido "+data);
 
-			Socket hand = socket;
-			byte[] msg = Encoding.ASCII.GetBytes("Servidor respondido!");
-			socket.Send(msg);
+			bytes = Encoding.ASCII.GetBytes("Servidor respondido!");
+			handler.Send(bytes);
 			socket.Close();
 		}
 	}

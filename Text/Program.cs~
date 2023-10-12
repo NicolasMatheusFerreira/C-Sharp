@@ -1,0 +1,28 @@
+﻿using System;
+using System.Text;
+
+namespace Text {
+	class Program {
+		public static void Main(string[] args) {
+			
+			Console.WriteLine("Casting Type");
+			Console.Write("Informe seu nome: ");
+			string nome = Console.ReadLine();
+
+			byte[] nomeByte = Encoding.ASCII.GetBytes(nome);
+			
+			Console.WriteLine("Nome em formato inteiro [byte]");
+			for(int i=0; i<nomeByte.Length; i++)
+				Console.Write(nomeByte[i]);
+
+			Console.Write("\n");
+
+			nome = Encoding.ASCII.GetString(nomeByte);
+
+			Console.WriteLine("Nome em formato de string");
+			Console.WriteLine(nome);
+
+			Console.WriteLine("Fim");
+		}
+	}
+}
