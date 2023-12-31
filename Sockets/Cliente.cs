@@ -4,36 +4,56 @@ using System.Net.Sockets;
 using System.Text;
 
 namespace Sockets {
-	public class Cliente {
-		
-		public static IPAddress ipAddress;
-		public static IPEndPoint ipEndPoint;
+    public class Cliente {
+        private static IPEndPoint ipEndPoint;
+        public static IPAddress ipv4;
+        public static int porta;
+        public static string mensagem;
 
-		public Cliente() {
+        public IPAddress Ipv4 {
+            get; set;
+        }
+        public int Porta {
+            get; set;
+        }
+        public string Mensagem {
+            get; set;
+        }
+        public Cliente() {
+        }
 
-			ipAddress = IPAddress.Parse("192.168.15.8");
-			ipEndPoint = new IPEndPoint(ipAddress, 8000);
-		}
+        public Cliente(IPAddress ipv4, int porta, string mensagem) {
 
-		public bool conectar() {
+            this.Ipv4 = ipv4;
+            this.Porta = porta;
+            this.Mensagem = mensagem;
 
-			Socket socket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            ipEndPoint = new IPEndPoint(Ipv4, porta);
+        }
+    
+        public int Status(Socket socket, byte[] buffer) {
 
-			socket.Connect(ipEndPoint);
+            int byteRecebido = socket.Receive(buffer);
+            return BitConverter.ToInt32(buffer);
+        }
+        public void conectar() {
 
-			byte[] mensagem = Encoding.ASCII.GetBytes("Ola, Mundo");
-			socket.Send(mensagem);
+            Socket socket = new Socket(Ipv4.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            
+            try {
+                socket.Connect(ipEndPoint);
 
-			byte[] bytes = new byte[1024];
-			int byteSec = socket.Receive(bytes);
+                byte[] buffer = new byte[1024];
+                buffer = Encoding.ASCII.GetBytes(Mensagem);
+                socket.Send(buffer);
 
-			string byteRec = Encoding.ASCII.GetString(bytes);
-			Console.WriteLine(byteRec);
+                if (Status(socket, buffer)==200)
+                    Console.WriteLine("Mensagem enviada com sucesso!");
 
-			socket.Close();
-			return true;
-		}
-
-
-	}
+                socket.Close();
+            } catch(Exception ex) {
+                Console.WriteLine("Falha ao tentar conectar!\n"+ex);
+            }
+        }
+    }
 }

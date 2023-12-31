@@ -1,0 +1,15 @@
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.csproj.AssemblyReference.cache
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.AssemblyInfoInputs.cache
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.AssemblyInfo.cs
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.csproj.CoreCompileInputs.cache
+C:\Users\nicol\Desktop\Batepapo\bin\Debug\net7.0\Batepapo.exe
+C:\Users\nicol\Desktop\Batepapo\bin\Debug\net7.0\Batepapo.deps.json
+C:\Users\nicol\Desktop\Batepapo\bin\Debug\net7.0\Batepapo.runtimeconfig.json
+C:\Users\nicol\Desktop\Batepapo\bin\Debug\net7.0\Batepapo.dll
+C:\Users\nicol\Desktop\Batepapo\bin\Debug\net7.0\Batepapo.pdb
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.dll
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\refint\Batepapo.dll
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.pdb
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\Batepapo.genruntimeconfig.cache
+C:\Users\nicol\Desktop\Batepapo\obj\Debug\net7.0\ref\Batepapo.dll

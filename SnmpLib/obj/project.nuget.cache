@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iPbWw5Tq1Hss0zepEmdrTXj9IxgbIQVVeHmETGfkbbX8PYiVTNHf7csHwlgkbpdXA3eZ/xZBOIOCP3wJbKzv8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nicol\\OneDrive\\Documentos\\C-Sharp\\SnmpLib\\SnmpLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\lextm.sharpsnmplib\\12.5.2\\lextm.sharpsnmplib.12.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

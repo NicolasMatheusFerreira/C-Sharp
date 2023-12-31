@@ -1,0 +1,15 @@
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\bin\Debug\net7.0\NetworkInformation.exe
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\bin\Debug\net7.0\NetworkInformation.deps.json
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\bin\Debug\net7.0\NetworkInformation.runtimeconfig.json
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\bin\Debug\net7.0\NetworkInformation.dll
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\bin\Debug\net7.0\NetworkInformation.pdb
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.csproj.AssemblyReference.cache
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.AssemblyInfoInputs.cache
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.AssemblyInfo.cs
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.csproj.CoreCompileInputs.cache
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.dll
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\refint\NetworkInformation.dll
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.pdb
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\NetworkInformation.genruntimeconfig.cache
+C:\Users\nicol\OneDrive\Documentos\C-Sharp\NetworkInformation\obj\Debug\net7.0\ref\NetworkInformation.dll
